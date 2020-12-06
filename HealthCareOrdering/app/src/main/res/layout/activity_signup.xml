@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your username"
+            android:layout_below="@+id/tv_signup"/>
+
+        <EditText
+            android:id="@+id/et_signup_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your contact"
+            android:inputType="phone"
+            android:layout_below="@+id/et_signup_username"/>
+
+        <EditText
+            android:id="@+id/et_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/et_signup_contact"/>
+
+        <TextView
+            android:id="@+id/tv_link_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here to login!"
+            android:layout_below="@+id/et_signup_password"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:onClick="btn_linkedLogin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_link_login"
+            android:text="Confirm"
+            android:layout_marginTop="10dp"
+            android:onClick="btnSignup_clicked"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
